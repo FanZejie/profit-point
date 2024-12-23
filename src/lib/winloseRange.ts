@@ -13,12 +13,12 @@ const calculatePoints = (currentPrice: number, stopLossPrice: number, isUpward: 
     const directionMultiplier: number = isUpward ? 1 : -1; // 根据方向选择加减
 
     // 计算各止盈点
-    const winRange1_5: string = (currentPrice + directionMultiplier * lossRange * 1.5).toFixed(2);
+    const winRange1: string = (currentPrice + directionMultiplier * lossRange).toFixed(2);
     const winRange2: string = (currentPrice + directionMultiplier * lossRange * 2).toFixed(2);
     const winRange3: string = (currentPrice + directionMultiplier * lossRange * 3).toFixed(2);
 
     return {
-        winRange1_5,
+        winRange1,
         winRange2,
         winRange3
     };
