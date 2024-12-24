@@ -58,8 +58,8 @@ export function calculateExitPrice(
       throw new Error("最大损失金额不能超过投入金额");
     }
 
-    let temp1 = maxLossAmount * openAmount
-    let temp2 = investedAmount * leverage
+    const temp1 = maxLossAmount * openAmount
+    const temp2 = investedAmount * leverage
     let res : number = 0
     if(upOrDown){
        res  = openAmount - (temp1 / temp2)
