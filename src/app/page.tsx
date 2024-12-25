@@ -12,10 +12,10 @@ export default function Home() {
 
     const [lever, setLever] = useState<number>(0);
     const [amount, setAmount] = useState<number>(0);
-    const [result, setResult] = useState<{ [key: string]: string }>({
-        winRange1: '',
-        winRange2: '',
-        winRange3: ''
+    const [result, setResult] = useState<{ [key: string]: number }>({
+        winRange1: 0,
+        winRange2: 0,
+        winRange3: 0
     });
 
     const [exitPrice, setExitPrice] = useState<number>(0);
